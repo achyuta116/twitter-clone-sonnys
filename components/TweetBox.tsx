@@ -77,7 +77,7 @@ function TweetBox({ setTweets }: Props) {
                             <LocationMarkerIcon className='h-5 w-5' />
                         </div>
                         <button 
-                        onClick={e => handleSubmit}
+                        onClick={handleSubmit}
                         disabled={!input || !session} className='bg-twitter px-5 py-2 font-bold text-white rounded-full disabled:opacity-40'>Tweet</button>
                     </div>
                     {imageUrlBoxIsOpen && (
